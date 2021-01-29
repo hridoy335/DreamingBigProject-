@@ -1,0 +1,4 @@
+org\sr\project\core\aop\AccessRightAspect.class
+org\sr\project\core\aop\LoggingAspect.class
+org\sr\project\core\auth\AuthController.class
+org\sr\project\core\config\AppConfig.class

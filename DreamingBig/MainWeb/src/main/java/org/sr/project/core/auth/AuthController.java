@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.sr.project.core.enumeration.LoginErrorCode;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -69,13 +70,11 @@ public class AuthController {
         Exception exception = (Exception) request.getSession().getAttribute(key);
         if(exception!=null){
             String message = exception.getMessage();
-            //TODO : LOGIN ERROR CODE ENUM CREATION
-            /*if(message.equals(LoginErrorCode.FALIED.getCode()) || message.equals(LoginErrorCode.LOCKED.getCode())){
+            if(message.equals(LoginErrorCode.FAILED.getCode()) || message.equals(LoginErrorCode.LOCKED.getCode())){
                 return message;
             }else{
                 return LoginErrorCode.MAX_SESSION.getCode();
-            }*/
-            return null;
+            }
         }else{
             return null;
         }

@@ -1,8 +1,6 @@
 package org.sr.project.core.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.corba.se.spi.resolver.LocalResolver;
-import org.eclipse.core.internal.jobs.ObjectMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.PropertiesFactoryBean;
